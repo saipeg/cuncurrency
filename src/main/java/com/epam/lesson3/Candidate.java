@@ -39,7 +39,7 @@ class Main4 {
   public static void main(String[] args) throws InterruptedException {
     Candidate candidate = new Candidate();
     candidate.talk();
-    Thread.sleep(1000);
+    Thread.sleep(5000);
     candidate.requestStop();
   }
 }

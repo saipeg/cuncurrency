@@ -5,7 +5,8 @@ public class NewThread extends Thread {
   @Override
   public void run() {
     System.out.println("Started");
-    for (int i = 0; i < 100000; i++) {
+    for (int i = 0; i < 10; i++) {
+      System.out.println("Cycle FOR");
 
     }
     try {
@@ -26,7 +27,7 @@ class Execute {
     thread.start();
     System.out.println("State: " + thread.getState());
     while (true) {
-      Thread.currentThread().sleep(1000);
+      Thread.currentThread().sleep(500);
       System.out.println("State: " + thread.getState());
     }
   }
